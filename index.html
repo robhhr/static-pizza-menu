@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,190 @@
   <title>CodeCore Pizza</title>
   <link rel="shortcut icon" type="image/jpg" href="assets/pizza.png" />
 </head>
+
 <body>
   <h1>CodeCore Pizza</h1>
-  <h2>Hours of Operation</h2>
+  <!-- Hours of operation -->
+  <section class="section section--hours">
+    <h2 id="section--title">Hours of Operation</h2>
+    <table>
+      <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+      </tr>
+      <tr>
+        <td>8am - 8pm</td>
+        <td>8am - 8pm</td>
+        <td>8am - 8pm</td>
+        <td>8am - 8pm</td>
+        <td>8am - 8pm</td>
+        <td>11am - 5pm</td>
+        <td>Closed</td>
+      </tr>
+    </table>
+  </section>
+  <!-- Discounts -->
+  <section class="section section--discounts">
+    <h2 id="section--title">Discounts</h2>
+    <ul>
+      <li>
+        <strong>Monday</strong>
+        <p>10% off all orders over $25</p>
+      </li>
+      <li>
+        <strong>Wednesday</strong>
+        <p>Free wings with every extra large pizza</p>
+      </li>
+      <li>
+        <a href="./bogo-deal.html" target="_blank">Download our app to get a BOGO deal</a>
+      </li>
+    </ul>
+  </section>
+  <!-- Specialties -->
+  <section class="section section--specialties">
+    <h2 id="section--title">Specialties</h2>
+    <div class="section--specialties__container">
+      <p class="section--specialties__title">Hawaiian</p>
+      <p class="section--specialties__description">Quisque leo lacus, mattis et eros ut, pulvinar porta neque. Duis
+        facilisis lorem ac libero finibus euismod. Integer
+        porta arcu pretium fringilla luctus. Fusce aliquet felis nec purus pretium, ac accumsan quam lacinia. Integer
+        neque
+        magna, iaculis quis leo tempus, porttitor ultrices erat. Morbi vitae nisi quis est fringilla pretium. Fusce
+        justo augue,
+        auctor eu neque a, feugiat varius erat. Etiam sollicitudin augue lectus, eu placerat turpis iaculis quis.
+        Pellentesque
+        molestie odio vel tempus consectetur.
+      </p>
+    </div>
+    <div class="section--specialties__container">
+      <p class="section--specialties__title">Buffalo</p>
+      <p class="section--specialties__description">Quisque leo lacus, mattis et eros ut, pulvinar porta neque. Duis
+        facilisis lorem ac libero finibus euismod. Integer
+        porta arcu pretium fringilla luctus. Fusce aliquet felis nec purus pretium, ac accumsan quam lacinia. Integer
+        neque
+        magna, iaculis quis leo tempus, porttitor ultrices erat. Morbi vitae nisi quis est fringilla pretium. Fusce
+        justo augue,
+        auctor eu neque a, feugiat varius erat. Etiam sollicitudin augue lectus, eu placerat turpis iaculis quis.
+        Pellentesque
+        molestie odio vel tempus consectetur.
+      </p>
+    </div>
+    <div class="section--specialties__container">
+      <p class="section--specialties__title">New York Steak</p>
+      <p class="section--specialties__description">Quisque leo lacus, mattis et eros ut, pulvinar porta neque. Duis
+        facilisis lorem ac libero finibus euismod. Integer
+        porta arcu pretium fringilla luctus. Fusce aliquet felis nec purus pretium, ac accumsan quam lacinia. Integer
+        neque
+        magna, iaculis quis leo tempus, porttitor ultrices erat. Morbi vitae nisi quis est fringilla pretium. Fusce
+        justo augue,
+        auctor eu neque a, feugiat varius erat. Etiam sollicitudin augue lectus, eu placerat turpis iaculis quis.
+        Pellentesque
+        molestie odio vel tempus consectetur.
+      </p>
+    </div>
+    <div class="section--specialties__container">
+      <p class="section--specialties__title">Margherita</p>
+      <p class="section--specialties__description">Quisque leo lacus, mattis et eros ut, pulvinar porta neque. Duis facilisis
+        lorem ac libero finibus euismod. Integer porta arcu pretium fringilla luctus. Fusce aliquet felis nec purus pretium, ac accumsan quam lacinia. Integer neque magna, iaculis quis leo tempus, porttitor ultrices erat. Morbi vitae nisi quis est fringilla pretium. Fusce justo augue, auctor eu neque a, feugiat varius erat. Etiam sollicitudin augue lectus, eu placerat turpis iaculis quis. molestie odio vel tempus consectetur.
+      </p>
+    </div>
+    <div class="section--specialties__container">
+      <p class="section--specialties__title">Vegetarian</p>
+      <p class="section--specialties__description">Quisque leo lacus, mattis et eros ut, pulvinar porta neque. Duis facilisis lorem ac libero finibus euismod. Integer porta arcu pretium fringilla luctus. Fusce aliquet felis nec purus pretium, ac accumsan quam lacinia. Integer neque magna, iaculis quis leo tempus, porttitor ultrices erat. Morbi vitae nisi quis est fringilla pretium. Fusce justo augue, auctor eu neque a, feugiat varius erat. Etiam sollicitudin augue lectus, eu placerat turpis iaculis quis. molestie odio vel tempus consectetur.
+      </p>
+    </div>
+  </section>
+  <!-- Custom -->
+  <section class="section--custom">
+    <h2 id="section--title">Custom</h2>
+    <form action="">
+      <fieldset>
+        <legend>Toppins</legend>
+        <p>
+          <label>
+            <input type="checkbox" value="pizza_toppings" name="spinach">
+            Spinach
+          </label>
+          <label>
+            <input type="checkbox" value="pizza_toppings" name="pepperoni">
+            Pepperoni
+          </label>
+          <label>
+            <input type="checkbox" value="pizza_toppings" name="mushrooms">
+            Mushrooms
+          </label>
+          <label>
+            <input type="checkbox" value="pizza_toppings" name="tomatoes">
+            Tomatoes
+          </label>
+          <label>
+            <input type="checkbox" value="pizza_toppings" name="anchovies">
+            Anchovies
+          </label>
+          <label>
+            <input type="checkbox" value="pizza_toppings" name="chicken">
+            Chicken
+          </label>
+          <label>
+            <input type="checkbox" value="pizza_toppings" name="beef">
+            Beef
+          </label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Sauce *required</legend>
+        <label>
+          <input type="radio" value="pizza_sauce" name="pesto">
+          Pesto
+        </label>
+        <label>
+          <input type="radio" value="pizza_sauce" name="marinara">
+          Marinara
+        </label>
+        <label>
+          <input type="radio" value="pizza_sauce" name="hummus">
+          Hummus
+        </label>
+        <label>
+          <input type="radio" value="pizza_sauce" name="barbeque">
+          Barbeque
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Size</legend>
+        <select>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>X Large</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Contact Info</legend>
+        <p>
+          <label>Name</label>
+          <input type="text" name="form_name">
+        </p>
+        <p>
+          <label>Email</label>
+          <input type="email" name="form_email">
+        </p>
+        <p>
+          <label>Time of delivery</label>
+          <input type="time" name="form_time">
+        </p>
+      </fieldset>
+      <p>
+        <button type="reset">Reset Form</button>
+        <button type="submit">Place Order</button>
+      </p>
+    </form>
+  </section>
 </body>
+
 </html>
