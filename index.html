@@ -11,11 +11,11 @@
 </head>
 
 <body>
-  <h1>CodeCore Pizza</h1>
+  <h1 class="main--title">CodeCore Pizza</h1>
   <!-- Hours of operation -->
   <section class="section section--hours">
     <h2 id="section--title">Hours of Operation</h2>
-    <table>
+    <table class="section--hours__table">
       <tr>
         <th>Monday</th>
         <th>Tuesday</th>
@@ -39,17 +39,17 @@
   <!-- Discounts -->
   <section class="section section--discounts">
     <h2 id="section--title">Discounts</h2>
-    <ul>
+    <ul class="section--discounts__list">
       <li>
         <strong>Monday</strong>
-        <p>10% off all orders over $25</p>
+        <p class="section--discounts__list-desc">10% off all orders over $25</p>
       </li>
       <li>
         <strong>Wednesday</strong>
-        <p>Free wings with every extra large pizza</p>
+        <p class="section--discounts__list-desc">Free wings with every extra large pizza</p>
       </li>
       <li>
-        <a href="./bogo-deal.html" target="_blank">Download our app to get a BOGO deal</a>
+        <a class="section--discounts__list-link" href="./bogo-deal.html" target="_blank">Download our app to get a BOGO deal</a>
       </li>
     </ul>
   </section>
@@ -110,87 +110,97 @@
   <!-- Custom -->
   <section class="section--custom">
     <h2 id="section--title">Custom</h2>
-    <form action="./thank-you.html">
+    <form class="section--custom__form" action="./thank-you.html">
       <fieldset>
-        <legend>Toppins</legend>
-        <p>
-          <label>
-            <input type="checkbox" value="pizza_toppings" name="spinach">
-            Spinach
-          </label>
-          <label>
-            <input type="checkbox" value="pizza_toppings" name="pepperoni">
-            Pepperoni
-          </label>
-          <label>
-            <input type="checkbox" value="pizza_toppings" name="mushrooms">
-            Mushrooms
-          </label>
-          <label>
-            <input type="checkbox" value="pizza_toppings" name="tomatoes">
-            Tomatoes
-          </label>
-          <label>
-            <input type="checkbox" value="pizza_toppings" name="anchovies">
-            Anchovies
-          </label>
-          <label>
-            <input type="checkbox" value="pizza_toppings" name="chicken">
-            Chicken
-          </label>
-          <label>
-            <input type="checkbox" value="pizza_toppings" name="beef">
-            Beef
-          </label>
-        </p>
+        <legend>Toppings</legend>
+        <div class="section--custom__form-content">
+          <p>
+            <label>
+              <input type="checkbox" value="pizza_toppings" name="spinach">
+              Spinach
+            </label>
+            <label>
+              <input type="checkbox" value="pizza_toppings" name="pepperoni">
+              Pepperoni
+            </label>
+            <label>
+              <input type="checkbox" value="pizza_toppings" name="mushrooms">
+              Mushrooms
+            </label>
+            <label>
+              <input type="checkbox" value="pizza_toppings" name="tomatoes">
+              Tomatoes
+            </label>
+            <label>
+              <input type="checkbox" value="pizza_toppings" name="anchovies">
+              Anchovies
+            </label>
+            <label>
+              <input type="checkbox" value="pizza_toppings" name="chicken">
+              Chicken
+            </label>
+            <label>
+              <input type="checkbox" value="pizza_toppings" name="beef">
+              Beef
+            </label>
+          </p>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Sauce *required</legend>
-        <label>
-          <input type="radio" value="pizza_sauce" name="pesto">
-          Pesto
-        </label>
-        <label>
-          <input type="radio" value="pizza_sauce" name="marinara">
-          Marinara
-        </label>
-        <label>
-          <input type="radio" value="pizza_sauce" name="hummus">
-          Hummus
-        </label>
-        <label>
-          <input type="radio" value="pizza_sauce" name="barbeque">
-          Barbeque
-        </label>
+        <div class="section--custom__form-content">
+          <label>
+            <input type="radio" value="pizza_sauce" name="pesto">
+            Pesto
+          </label>
+          <label>
+            <input type="radio" value="pizza_sauce" name="marinara">
+            Marinara
+          </label>
+          <label>
+            <input type="radio" value="pizza_sauce" name="hummus">
+            Hummus
+          </label>
+          <label>
+            <input type="radio" value="pizza_sauce" name="barbeque">
+            Barbeque
+          </label>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Size</legend>
-        <select>
-          <option>Small</option>
-          <option>Medium</option>
-          <option>Large</option>
-          <option>X Large</option>
-        </select>
+        <div class="section--custom__form-content">
+          <select>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>X Large</option>
+          </select>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Contact Info</legend>
-        <p>
-          <label>Name</label>
-          <input type="text" name="form_name">
-        </p>
-        <p>
-          <label>Email</label>
-          <input type="email" name="form_email">
-        </p>
-        <p>
-          <label>Time of delivery</label>
-          <input type="time" name="form_time">
-        </p>
+        <div class="section--custom__form-content">
+          <p>
+            <label>Name</label>
+            <input type="text" name="form_name">
+          </p>
+          <p>
+            <label>Email</label>
+            <input type="email" name="form_email">
+          </p>
+          <p>
+            <label>Time of delivery</label>
+            <input type="time" name="form_time">
+          </p>
+        </div>
       </fieldset>
-      <p>
-        <button type="reset">Reset Form</button>
-        <button type="submit">Place Order</button>
-      </p>
+      <div class="btn--custom">
+        <p>
+          <button type="reset">Reset Form</button>
+          <button class="btn--custom__submit" type="submit">Place Order</button>
+        </p>
+      </div>
     </form>
   </section>
 </body>

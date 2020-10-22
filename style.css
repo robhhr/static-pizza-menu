@@ -1,4 +1,81 @@
 body {
-  background-color: dimgray;
-  color: peachpuff;
+  margin: 30px 10px;
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+th {
+  font-weight: bold;
+}
+.main--title {
+  font-size: 1.5em;
+}
+section {
+  padding: 10px 0;
+}
+section #section--title {
+  padding-bottom: 15px;
+  font-size: 1.25em;
+}
+.section--hours__table {
+  display: flex;
+  overflow: scroll;
+}
+.section--hours__table td,
+.section--hours__table th {
+  border: 2px solid black;
+  white-space: nowrap;
+  padding: 3px 8px;
+  text-align: center;
+}
+.section--discounts__list {
+  list-style: outside;
+  margin-left: 35px;
+}
+.section--discounts__list li::marker {
+  color: black;
+}
+.section--discounts__list-desc {
+  display: list-item;
+  padding: 5px 0;
+  margin-left: 30px;
+}
+.section--discounts__list-link:visited {
+  color: blue;
+}
+.section--specialties__title {
+  font-weight: bold;
+  text-decoration: underline;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.section--specialties__description {
+  margin-left: 35px;
+}
+.section--custom__form-content {
+  padding: 10px;
+}
+.section--custom__form fieldset {
+  background-color: #fffee3;
+  border: 1px solid black;
+}
+.section--custom__form fieldset legend {
+  color: rgb(106, 205, 208);
+  margin-left: 10px;
+}
+.btn--custom {
+  margin: 15px 0;
+}
+.btn--custom__submit {
+  width: 10em;
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    max-width: 1000px;
+    margin: 30px auto;
+  }
 }
